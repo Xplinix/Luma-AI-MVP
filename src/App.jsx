@@ -44,8 +44,8 @@ export default function LumaApp() {
   };
 
   return (
-    <div style={{ maxWidth: 400, margin: "auto", padding: 20, fontFamily: "Arial" }}>
-      <h1 style={{ textAlign: "center" }}>Luma AI - Math Helper</h1>
+    <div style={{ maxWidth: 400, margin: "auto", padding: 20, fontFamily: "Arial", color: "#228B22" }}>
+      <h1 style={{ textAlign: "center", color: "#228B22" }}>Luma AI: Your Math Helper</h1>
       {step === "quiz" && (
         <div>
           <p>{questions[currentQ].question}</p>
@@ -53,7 +53,7 @@ export default function LumaApp() {
             <button
               key={opt}
               onClick={() => handleAnswer(opt)}
-              style={{ display: "block", margin: "10px 0" }}
+              style={{ display: "block", margin: "10px 0", backgroundColor: "#228B22", color: "#fff", border: "none", padding: "10px", borderRadius: "6px" }}
             >
               {opt}
             </button>
